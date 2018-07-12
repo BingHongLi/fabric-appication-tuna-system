@@ -1,0 +1,9 @@
+[submodule "lbh_fabric_tuna_client_play"]
+	path = lbh_fabric_tuna_client_play
+	url = https://github.com/BingHongLi/lbh_fabric_tuna_client_play.git
+[submodule "react-tuna"]
+	path = react-tuna
+	url = https://github.com/BingHongLi/react-tuna.git
+[submodule "fabric-samples"]
+	path = fabric-samples
+	url = https://github.com/BingHongLi/fabric-samples.git

@@ -1,0 +1,22 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: net_basic
+services:
+  tuna-client-api:
+    image: fabric-client-backend
+    container_name: tuna-client-api.pri
+    command: /opt/lbh_fabric_client_play-1.0/bin/lbh_fabric_client_play -Dplay.http.secret.key=abcdefghijk -Dhttp.port=80
+    ports:
+      - "0.0.0.0:9000:80"
+  tuna-client-nginx:
+    image: fabric-client-frontend
+    container_name: tuna-client-nginx.pri
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - "tuna-client-api"
