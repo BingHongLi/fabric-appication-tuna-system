@@ -7,3 +7,6 @@
 [submodule "fabric-samples"]
 	path = fabric-samples
 	url = https://github.com/BingHongLi/fabric-samples.git
+[submodule "lbh_tuna_demo"]
+	path = lbh_tuna_demo
+	url = https://github.com/BingHongLi/lbh_tuna_demo.git
