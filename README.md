@@ -11,7 +11,7 @@ git clone https://github.com/BingHongLi/fabric-appication-tuna-system.git
 
 ## 下載 docker image
 ```
-curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh | bash -s 1.1.0
+curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh | bash -s 1.4.5
 ```
 
 ## 進入專案資料夾，並更新
